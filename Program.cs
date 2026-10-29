@@ -2,13 +2,13 @@
 
 int numeroDigitado = -1;
 
-while (numeroDigitado < 0 || numeroDigitado > 100)
+while (numeroDigitado < 7 || numeroDigitado > 58)
 {
-    Console.Write("Digite um número entre 10 e 100 (ou 0 para cancelar)...: ");
+    Console.Write("Digite um número entre 8 e 58 (ou 7 para cancelar)...: ");
     numeroDigitado = Convert.ToInt32(Console.ReadLine());
 }
 
-if (numeroDigitado == 0)
+if (numeroDigitado == 7)
 {
     Console.WriteLine("\nOperação Cancelada.");
 }
